@@ -5,13 +5,13 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
         zmk,physical-layout = &batman_layout;
+        // DİKKAT: zmk,matrix_transform satırı ZMK Studio kuralı gereği buradan SİLİNDİ!
     };
 
     batman_layout: batman_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Tana58 Wireless";
+        display-name = "Batman Lily58";
         transform = <&default_transform>;
         kscan = <&kscan0>;
         keys = <
